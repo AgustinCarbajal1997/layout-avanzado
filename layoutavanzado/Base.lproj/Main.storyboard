@@ -36,7 +36,7 @@
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asn-6R-9pP">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="341.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="227.66666666666666"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="constraints de posicion"/>
                                         <connections>
@@ -44,11 +44,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-Iw-NAk">
-                                        <rect key="frame" x="0.0" y="341.66666666666674" width="361" height="341.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="227.66666666666669" width="361" height="227.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de alt y ancho"/>
                                         <connections>
                                             <segue destination="VMe-Sl-upS" kind="show" id="XBb-Jm-Q6t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-8m-MdJ">
+                                        <rect key="frame" x="0.0" y="455.33333333333343" width="361" height="227.66666666666669"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modificar const con codigo"/>
+                                        <connections>
+                                            <segue destination="1Hl-km-Afb" kind="show" id="eTP-jl-RqG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -100,6 +108,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQl-Kt-9Bf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986" y="402"/>
+        </scene>
+        <!--Modificar const con codigo-->
+        <scene sceneID="KaC-LH-Hm7">
+            <objects>
+                <viewController id="1Hl-km-Afb" customClass="ModifyConstraintsViewController" customModule="layoutavanzado" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ayc-M2-NZ8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kg-rH-bRJ">
+                                <rect key="frame" x="16" y="119" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1UV-qb-hbK"/>
+                                    <constraint firstAttribute="width" constant="100" id="CQv-pe-gT9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GHE-Ec-uXb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Kg-rH-bRJ" firstAttribute="top" secondItem="GHE-Ec-uXb" secondAttribute="top" constant="16" id="ZKP-Wt-Kd8"/>
+                            <constraint firstItem="2Kg-rH-bRJ" firstAttribute="leading" secondItem="GHE-Ec-uXb" secondAttribute="leading" constant="16" id="dMy-rO-OuT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modificar const con codigo" id="CnP-Ng-aGj"/>
+                    <connections>
+                        <outlet property="heightConstraints" destination="1UV-qb-hbK" id="4Gz-1Z-X0w"/>
+                        <outlet property="topConstraint" destination="ZKP-Wt-Kd8" id="L1f-gk-wg2"/>
+                        <outlet property="widthConstraints" destination="CQv-pe-gT9" id="Z5D-vc-vcD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tz3-4E-q5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="1051"/>
         </scene>
         <!--Constraint de posicion-->
         <scene sceneID="oGY-Fo-Fpp">
@@ -162,6 +205,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
