@@ -110,8 +110,32 @@
                     <view key="view" contentMode="scaleToFill" id="Qjt-Fs-eUl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HZ-GF-eOb">
+                                <rect key="frame" x="16" y="119" width="361" height="361"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39v-r3-vHu">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="120.33333333333333"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="39v-r3-vHu" secondAttribute="trailing" id="Cnr-Pu-2u2"/>
+                                    <constraint firstItem="39v-r3-vHu" firstAttribute="height" secondItem="6HZ-GF-eOb" secondAttribute="height" multiplier="1:3" id="PES-vr-Q9h"/>
+                                    <constraint firstAttribute="width" secondItem="6HZ-GF-eOb" secondAttribute="height" id="Vdr-79-IBa"/>
+                                    <constraint firstItem="39v-r3-vHu" firstAttribute="leading" secondItem="6HZ-GF-eOb" secondAttribute="leading" id="ZE0-Ay-1RB"/>
+                                    <constraint firstItem="39v-r3-vHu" firstAttribute="top" secondItem="6HZ-GF-eOb" secondAttribute="top" id="yyP-b6-jTi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YM4-Kl-OAi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6HZ-GF-eOb" firstAttribute="top" secondItem="YM4-Kl-OAi" secondAttribute="top" constant="16" id="Hhf-Rz-YC5"/>
+                            <constraint firstItem="6HZ-GF-eOb" firstAttribute="leading" secondItem="YM4-Kl-OAi" secondAttribute="leading" constant="16" id="hhQ-SC-4Gz"/>
+                            <constraint firstItem="YM4-Kl-OAi" firstAttribute="trailing" secondItem="6HZ-GF-eOb" secondAttribute="trailing" constant="16" id="ynr-Dx-8Rl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Constraints de posicion" id="PHM-Ne-Geb"/>
                 </viewController>
