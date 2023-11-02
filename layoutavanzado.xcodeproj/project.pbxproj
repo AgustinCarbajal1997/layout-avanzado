@@ -14,6 +14,7 @@
 		9F21C69D2AF1C46B00BDB727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F21C69C2AF1C46B00BDB727 /* Assets.xcassets */; };
 		9F21C6A02AF1C46B00BDB727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F21C69E2AF1C46B00BDB727 /* LaunchScreen.storyboard */; };
 		9F21C6A82AF1DF8200BDB727 /* ModifyConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F21C6A72AF1DF8200BDB727 /* ModifyConstraintsViewController.swift */; };
+		9F8859BA2AF44EA1005AF6E7 /* CreateConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8859B92AF44EA1005AF6E7 /* CreateConstraintsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9F21C69F2AF1C46B00BDB727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F21C6A12AF1C46B00BDB727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F21C6A72AF1DF8200BDB727 /* ModifyConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstraintsViewController.swift; sourceTree = "<group>"; };
+		9F8859B92AF44EA1005AF6E7 /* CreateConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConstraintsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				9F21C69E2AF1C46B00BDB727 /* LaunchScreen.storyboard */,
 				9F21C6A12AF1C46B00BDB727 /* Info.plist */,
 				9F21C6A72AF1DF8200BDB727 /* ModifyConstraintsViewController.swift */,
+				9F8859B92AF44EA1005AF6E7 /* CreateConstraintsViewController.swift */,
 			);
 			path = layoutavanzado;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8859BA2AF44EA1005AF6E7 /* CreateConstraintsViewController.swift in Sources */,
 				9F21C6982AF1C46900BDB727 /* ViewController.swift in Sources */,
 				9F21C6942AF1C46900BDB727 /* AppDelegate.swift in Sources */,
 				9F21C6962AF1C46900BDB727 /* SceneDelegate.swift in Sources */,
